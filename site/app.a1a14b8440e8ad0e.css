@@ -1,0 +1,18 @@
+:root{color-scheme:light;--ink:#234b58;--paper:#fffdf6;--gold:#b49660;--safe-top:env(safe-area-inset-top,0px);--safe-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#102d3a;font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}body{overscroll-behavior:none;background:radial-gradient(ellipse at 50% 30%,#29444b,#102632 70%)}
+#stage{position:relative;width:min(100%,480px);height:100%;height:100dvh;margin:auto;overflow:hidden;touch-action:none;background:#f3f0e7;box-shadow:0 0 90px #06151b55}
+canvas{position:absolute;inset:0;width:100%;height:100%;display:block}#controls{position:absolute;inset:0;pointer-events:none}
+.canvas-hit{position:absolute;margin:0;border:0;padding:0;background:transparent;color:transparent;overflow:hidden;pointer-events:auto;cursor:pointer;border-radius:9px;font-size:1px;touch-action:none}
+.canvas-hit:focus-visible{outline:3px solid #a68751;outline-offset:-3px;background:#e2ddb41c}.canvas-hit:disabled{cursor:default}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+#web-options{position:absolute;z-index:2;right:14px;top:calc(var(--safe-top) + 12px);min-height:32px;border:1px solid #b4966066;color:#dbc99f;background:#102d3a;border-radius:18px;font-size:11px;padding:6px 11px;cursor:pointer}
+#loading{position:absolute;inset:0;padding:25vh 32px 40px;background:#102d3a;color:#f8f3df}#loading span{font-size:13px;letter-spacing:3px;color:#c6ab75}#loading h1{font-weight:500;font-size:40px;line-height:1.5}#loading p{color:#a6b7bb;font-size:14px}
+dialog{width:min(92vw,440px);max-height:calc(94dvh - var(--safe-top) - var(--safe-bottom));overflow:auto;border:1px solid #d8ddcf;border-radius:18px;padding:24px;background:var(--paper);color:var(--ink);box-shadow:0 16px 80px #06151b50;overscroll-behavior:contain}
+dialog::backdrop{background:#091e2abb}dialog h2{font-size:21px;margin:0 0 12px;line-height:1.5}dialog p{line-height:1.8;font-size:14px;margin:12px 0}dialog small{display:block;color:#6b7e7e;line-height:1.7}dialog .actions{display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-end;margin-top:20px}
+dialog button,dialog .download{font:inherit;font-size:14px;min-height:44px;padding:11px 16px;border-radius:9px;border:1px solid #cdd6cc;background:#edf0e6;color:var(--ink);cursor:pointer;text-decoration:none;text-align:center}
+dialog button.primary,dialog .download{background:#234b58;color:var(--paper);border-color:#234b58}dialog button:disabled{opacity:.5;cursor:default}dialog .stack{display:grid;gap:10px;margin:18px 0}dialog .stack button{text-align:left}
+dialog input,dialog textarea{width:100%;font:16px/1.6 system-ui;padding:12px;border:1px solid #a2b2a2;border-radius:9px;background:white;color:var(--ink)}dialog textarea{min-height:150px;resize:vertical}dialog label{display:block;font-size:14px;margin-bottom:10px}dialog .status{padding:12px 14px;border-radius:9px;background:#e9eee3;font-size:13px;line-height:1.7}
+dialog img{display:block;max-width:100%;max-height:65dvh;margin:auto;object-fit:contain;border-radius:8px}dialog:focus{outline:none}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+dialog .contact-number{font-size:25px;font-weight:650;letter-spacing:1px;color:#8c6d35;padding:14px 0;border-block:1px solid #d6d6c5;user-select:all;overflow-wrap:anywhere}
+[hidden]{display:none!important}noscript{position:fixed;inset:20%;padding:20px;background:var(--paper);color:var(--ink);line-height:1.8}
+@media(min-width:850px){#stage{border-inline:1px solid #dac6a02e}}

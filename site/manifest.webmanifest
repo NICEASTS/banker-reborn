@@ -1,0 +1,21 @@
+{
+  "id": "./",
+  "name": "重生之我是银行行长 · Demo",
+  "short_name": "银行人生 Demo",
+  "description": "By-Nice · 免费体验支行短篇，更多路线联系 QQ 2514962562 解锁。",
+  "lang": "zh-CN",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#102d3a",
+  "background_color": "#102d3a",
+  "icons": [
+    {
+      "src": "./resources/376e3379a34e6a60/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
